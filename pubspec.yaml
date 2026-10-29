@@ -1,0 +1,41 @@
+name: live_communication_assistant
+description: "Live Communication Assistant - An accessible real-time speech-to-text communication application for deaf and hard-of-hearing users."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management & Reactive Architecture
+  flutter_riverpod: ^2.5.1
+
+  # Local Persistence
+  sqflite: ^2.3.3
+  sqflite_common_ffi: ^2.3.3
+  path: ^1.9.0
+  path_provider: ^2.1.3
+
+  # Speech & Audio
+  speech_to_text: ^6.6.1
+  permission_handler: ^11.3.1
+
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.4.0
+  equatable: ^2.0.5
+  share_plus: ^9.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true

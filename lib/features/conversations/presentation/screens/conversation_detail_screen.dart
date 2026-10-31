@@ -5,7 +5,7 @@ import '../../../../core/utilities/date_formatter.dart';
 import '../../../../core/utilities/file_exporter.dart';
 import '../../../settings/presentation/providers/settings_provider.dart';
 import '../../domain/models/conversation.dart';
-import '../widgets/transcript_segment_bubble.dart';
+import 'package:live_communication_assistant/features/live_transcription/presentation/widgets/transcript_segment_bubble.dart';
 
 class ConversationDetailScreen extends ConsumerWidget {
   final Conversation conversation;

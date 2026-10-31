@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../../app/theme/app_colors.dart';
-import '../../speech_recognition/domain/models/recognition_status.dart';
+import 'package:live_communication_assistant/app/theme/app_colors.dart';
+import 'package:live_communication_assistant/features/speech_recognition/domain/models/recognition_status.dart';
 
 class LiveControlsBar extends StatelessWidget {
   final RecognitionStatus status;

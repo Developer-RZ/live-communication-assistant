@@ -1,6 +1,6 @@
-import 'recognition_status.dart';
-import 'speech_recognition_result.dart';
-import 'supported_language.dart';
+import '../models/recognition_status.dart';
+import '../models/speech_recognition_result.dart';
+import '../models/supported_language.dart';
 
 typedef SpeechResultCallback = void Function(SpeechRecognitionResult result);
 typedef StatusChangedCallback = void Function(RecognitionStatus status);

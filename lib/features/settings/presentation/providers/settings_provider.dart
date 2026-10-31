@@ -1,5 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../domain/models/user_settings.dart';
+import 'package:live_communication_assistant/features/settings/domain/models/user_settings.dart';
+import 'package:live_communication_assistant/features/speech_recognition/domain/models/supported_language.dart';
 
 abstract class SettingsRepository {
   Future<UserSettings> getSettings();
@@ -48,7 +49,7 @@ class SettingsNotifier extends StateNotifier<UserSettings> {
     await _repository.saveSettings(state);
   }
 
-  Future<void> setLanguage(dynamic lang) async {
+  Future<void> setLanguage(SupportedLanguage lang) async {
     state = state.copyWith(preferredLanguage: lang);
     await _repository.saveSettings(state);
   }

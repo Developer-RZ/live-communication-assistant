@@ -1,15 +1,15 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
-import '../../conversations/domain/models/conversation.dart';
-import '../../conversations/domain/models/transcript_segment.dart';
-import '../../conversations/domain/repositories/conversation_repository.dart';
-import '../../conversations/data/repositories/sqlite_conversation_repository.dart';
-import '../../core/permissions/permission_service.dart';
-import '../../speech_recognition/domain/models/recognition_status.dart';
-import '../../speech_recognition/domain/models/supported_language.dart';
-import '../../speech_recognition/domain/services/speech_recognition_service.dart';
-import '../../speech_recognition/presentation/providers/speech_recognition_provider.dart';
-import '../../settings/presentation/providers/settings_provider.dart';
+import 'package:live_communication_assistant/features/conversations/domain/models/conversation.dart';
+import 'package:live_communication_assistant/features/conversations/domain/models/transcript_segment.dart';
+import 'package:live_communication_assistant/features/conversations/domain/repositories/conversation_repository.dart';
+import 'package:live_communication_assistant/features/conversations/data/repositories/sqlite_conversation_repository.dart';
+import 'package:live_communication_assistant/core/permissions/permission_service.dart';
+import 'package:live_communication_assistant/features/speech_recognition/domain/models/recognition_status.dart';
+import 'package:live_communication_assistant/features/speech_recognition/domain/models/supported_language.dart';
+import 'package:live_communication_assistant/features/speech_recognition/domain/services/speech_recognition_service.dart';
+import 'package:live_communication_assistant/features/speech_recognition/presentation/providers/speech_recognition_provider.dart';
+import 'package:live_communication_assistant/features/settings/presentation/providers/settings_provider.dart';
 import 'live_transcription_state.dart';
 
 final conversationRepositoryProvider = Provider<ConversationRepository>((ref) {

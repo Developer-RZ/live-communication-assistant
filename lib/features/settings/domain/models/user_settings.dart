@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import '../../speech_recognition/domain/models/supported_language.dart';
+import 'package:live_communication_assistant/features/speech_recognition/domain/models/supported_language.dart';
 
 enum TranscriptRetention {
   sevenDays(7, '7 Days'),

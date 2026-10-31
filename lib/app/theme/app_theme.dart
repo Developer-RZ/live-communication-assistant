@@ -17,7 +17,7 @@ class AppTheme {
         surface: surface,
         error: AppColors.textError,
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: cardColor,
         elevation: 2,
         margin: const EdgeInsets.symmetric(vertical: 6, horizontal: 0),

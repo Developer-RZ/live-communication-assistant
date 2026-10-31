@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../core/permissions/permission_service.dart';
+import 'package:live_communication_assistant/core/permissions/permission_service.dart';
 import '../../domain/services/speech_recognition_service.dart';
 import '../../data/services/android_speech_recognition_service.dart';
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../../app/theme/app_colors.dart';
-import '../../../settings/presentation/providers/settings_provider.dart';
-import '../../speech_recognition/domain/models/recognition_status.dart';
+import 'package:live_communication_assistant/app/theme/app_colors.dart';
+import 'package:live_communication_assistant/features/settings/presentation/providers/settings_provider.dart';
+import 'package:live_communication_assistant/features/speech_recognition/domain/models/recognition_status.dart';
 import '../providers/live_transcription_notifier.dart';
 import '../widgets/listening_status_indicator.dart';
 import '../widgets/transcript_segment_bubble.dart';

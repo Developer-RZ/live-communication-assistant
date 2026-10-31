@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
-import '../../conversations/domain/models/conversation.dart';
-import '../../conversations/domain/models/transcript_segment.dart';
-import '../../speech_recognition/domain/models/recognition_status.dart';
+import 'package:live_communication_assistant/features/conversations/domain/models/conversation.dart';
+import 'package:live_communication_assistant/features/conversations/domain/models/transcript_segment.dart';
+import 'package:live_communication_assistant/features/speech_recognition/domain/models/recognition_status.dart';
 
 class LiveTranscriptionState extends Equatable {
   final RecognitionStatus status;

@@ -1,8 +1,6 @@
-import 'dart:io';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'database_schema.dart';
 
 class AppDatabase {
@@ -18,20 +16,8 @@ class AppDatabase {
   }
 
   Future<Database> _initDB(String filePath) async {
-    // If desktop or test environment, initialize sqflite_ffi
-    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
-      sqfliteFfiInit();
-      databaseFactory = databaseFactoryFfi;
-    }
-
-    String path;
-    if (Platform.isAndroid || Platform.isIOS) {
-      final dbPath = await getDatabasesPath();
-      path = join(dbPath, filePath);
-    } else {
-      final appDocDir = await getApplicationDocumentsDirectory();
-      path = join(appDocDir.path, filePath);
-    }
+    final dbPath = await getDatabasesPath();
+    final path = join(dbPath, filePath);
 
     return await openDatabase(
       path,

@@ -60,7 +60,7 @@ class Conversation extends Equatable {
     String? language,
     DateTime? createdAt,
     DateTime? updatedAt,
-    List<TranscriptSegment> segments,
+    List<TranscriptSegment>? segments,
   }) {
     return Conversation(
       id: id ?? this.id,
